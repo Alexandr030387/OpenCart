@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniUrl</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.foo{
+				width: 325px;
+				background-color: #eeeeee;
+				padding: 30px;
+				height: 350px;
+			}
+			input{
+				padding: 10px;
+				height: 25px;
+				width: 300px;
+				margin-top: 10px;
+			}
+			.group_input{
+				margin: 10px 10px 10px 0px;
+			}
+			.row{
+				margin: 10px 10px 10px 12px;
+				padding: 10px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="foo">
+		<form action="mini.php" method="post">
+			<div class="group_input">
+				Вставте ссылку на сайт: 
+				<input type="url" name="longurl">
+			</div>
+			<div class="group_input">
+				Введите короткую ссылку:
+				<input type="url" name="smallurl">
+			</div>
+			<div class="group_input">
+				Введите время жизни ссылки:
+				<input type="time" name="timelife">
+			</div>
+			<div class="group_input">
+				<input type="submit" value="Create URL" class="row">
+			</div>
+		</form>
+	</div>
+	</body>
+</html>
